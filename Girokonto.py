@@ -96,3 +96,14 @@ class Tresor(VerwalteterBargeldbetrag):
     # TODO: Spezielle Methoden fuer eine Tresor
     pass
 
+#statische Methode die eine Klasse erzeugt
+
+def Juniorkonto(inhaber, kontonummer, kontostand):
+    return Konto(inhaber, kontonummer, kontostand, 20)
+
+class Konto:
+    Juniorkonto = staticmethod(Juniorkonto)
+
+J = Konto.Juniorkonto("Tom", 999, 67)
+
+J.zeige()
