@@ -20,7 +20,7 @@ while True:
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
     for (x, y, width, height) in faces:
-        cv2.rectangle(frame, (x, y), (x + width, y + height), (255, 0, 0), 3)
+        cv2.rectangle(frame, (x, y), (x + width, y + height), (0, 0, 0), -1)
 
     cv2.imshow("Camera", frame)
 
