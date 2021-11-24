@@ -1,7 +1,7 @@
 from random import randint
 
 
-class wuerfel():
+class wuerfel:
     def __init__(self):
         self.eyes = randint(1, 6)
 
